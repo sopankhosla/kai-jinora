@@ -1,0 +1,25 @@
+#core_header_panel {
+  width: 290px;
+  height: 410px;
+  left: 10px;
+  top: 120px;
+  position: absolute;
+  box-shadow: 0 0 2px #aaaaaa;
+}
+#core_toolbar {
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 49, 49);
+}
+#section1 {
+  height: 1000px;
+  border: 5px;
+  background: #ECECEC;
+}
+#input {
+  left: 10px;
+  top: 485px;
+  position: absolute;
+  width: 290px;
+  height: 45px;
+  background: white;
+}
