@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.js
+tests/*.js
+bower_components/
+reserved_nicks
