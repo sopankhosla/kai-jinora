@@ -1,0 +1,49 @@
+{
+  "name": "jinora",
+  "description": "jinora is a public chat application for a slack team that lets anonymous users talk to the entire team.",
+  "keywords": [
+    "jinora",
+    "slack",
+    "anonymous",
+    "proxy",
+    "webhook",
+    "public"
+  ],
+  "website": "https://github.com/captn3m0/jinora",
+  "repository": "https://github.com/captn3m0/jinora",
+  "logo": "https://i.imgur.com/WNRjxyN.jpg",
+  "success_url": "/",
+  "env": {
+    "SESSION_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies",
+      "generator": "secret"
+    },
+    "OUTGOING_TOKEN": {
+      "description": "Outgoing service token from Slack",
+      "required": true
+    },
+    "INCOMING_HOOK_URL": {
+      "description": "Incoming hook url from Slack",
+      "required": true
+    },
+    "API_TOKEN": {
+      "description": "Generate one for your team at api.slack.com/web",
+      "required": true
+    },
+    "BUFFER_SIZE": {
+      "description": "Number of messages to keep in memory",
+      "required": true,
+      "value": "500"
+    },
+    "SLACK_CHANNEL": {
+      "description": "Name of public channel in slack",
+      "required": true,
+      "value": "public"
+    },
+    "BASE_URL": {
+      "description": "Base url of the deployed application",
+      "required": false,
+      "value": "https://jinora.herokuapp.com"
+    }
+  }
+}
